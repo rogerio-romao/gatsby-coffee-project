@@ -10,6 +10,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
+      resolve: "gatsby-plugin-snipcart",
+      options: {
+        apiKey:
+          "MmQ0MGNkM2MtNzU0Ni00Y2MzLWI0YjItMmRlZGRhNzIxNGQzNjM3NjA0MDMyNjk1MDU4MDQz",
+        autopop: process.env.SNIPCART_API,
+      },
+    },
+    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
